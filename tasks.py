@@ -44,7 +44,7 @@ def add_task():
     due_date = entry_date.get().strip()
 
     if not title:
-        messagebox.showwarning("خطا", "عنوان نمی‌تواند خالی باشد!")
+        messagebox.showwarning("خطا", "عنوان نمی‌تواند خالی باش،عنوان باید تکمیل شود!")
         return
 
     cur.execute("INSERT INTO tasks (title, due_date) VALUES (?, ?)", (title, due_date))
